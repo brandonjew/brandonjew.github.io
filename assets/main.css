@@ -48,7 +48,7 @@ img {
   vertical-align: middle; }
 
 .parent {
-  width: 450px;
+  width: auto;
   margin: auto;
 }
 
