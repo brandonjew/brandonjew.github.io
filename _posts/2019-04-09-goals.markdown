@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Start here."
+date:   2019-04-09
+categories: site
+excerpt: "Plans for the blog." 
+
+---
+
+Bioinformatics research is fun but sometimes I have questions that probably wouldn't end up in a paper. I'm hoping this blog will inspire me to answer these questions.
+
+I'll also get some practice communicating technical stuff.

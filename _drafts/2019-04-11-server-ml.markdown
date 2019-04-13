@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Predicting your field of research based on server (mis)use."
+date:   2019-04-11
+categories: analysis 
+excerpt: "Exploring the variability in how researchers from different fields
+          use Hoffman2."
+
+---
