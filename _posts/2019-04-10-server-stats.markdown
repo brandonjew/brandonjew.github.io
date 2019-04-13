@@ -6,6 +6,7 @@ categories: analysis
 excerpt: "Probably much less than we think.
           A look into resource utilization on the Hoffman2 high performance
           cluster at UCLA."
+comments: true
 
 ---
 
