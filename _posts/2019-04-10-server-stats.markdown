@@ -63,7 +63,9 @@ The accounting data provides [quite a few metrics] for each job. We can see the 
 I calculated the memory overestimation of a job by subtracting the peak memory usage from the total memory requested (sometimes this is negative, indicating that a job went over the limit, but we only looked at positive values here). For this visualization, I also removed around 1,800 outlier jobs that had over 50 GB of unused memory (a few had 256 GB overestimated). 
 
 <br>
+<div class="content">
 <center><img src="/_img/posts/server-stats/hist_memory_overestimate_all_jobs_march19.png" width="450" height="400" ></center>
+</div>
 <br>
 
 Overall, we can observe a mean of roughly 5 GB overestimated per job and mode of 2 GB after rounding. For reference, jobs use 2.6 GB of memory on average. It should be noted that failed jobs can exaggerate the impact of memory overestimation, since they typically die fairly quickly and do not hold up the resources for that long. Roughly three percent of jobs had non-zero exit status, which usually indicates that the job failed. When I remove these jobs in these analyses, the above findings do not change.
@@ -71,7 +73,9 @@ Overall, we can observe a mean of roughly 5 GB overestimated per job and mode of
 Jobs vary significantly in how much memory they need. If a job requires 100GB of memory and 1GB is unused, it is much less of a problem than if a job only needing a few megabytes requests 1GB. With this is mind, I calculated the proportion of requested memory each job is actually using. I restricted the data to jobs that had zero-exit status and had memory usage less than or equal to the amount requested.  
 
 <br>
+<div class="content">
 <center><img src="/_img/posts/server-stats/hist_memory_proportion_all_jobs_march19.png" width="450" height="400" ></center>
+</div>
 <br>
 
 Most jobs use *zero* percent of the memory they are requesting. On average (which is less meaningful for skewed distributions such as these), jobs use around 25% of the memory they have reserved. Proper use of the queuing system would give us a mirrored image of this histogram. In this ideal world, jobs would tend to use most of the memory they request.
@@ -86,7 +90,9 @@ Most jobs use *zero* percent of the memory they are requesting. On average (whic
 Similarly, I calculated time ovestimation as the difference between the requested and actual duration of each job. Again, I restricted the data to jobs that successfully ran (non-zero exit statuses) and I did not show about one percent of outlier jobs that have a difference over 100 hours.
 
 <br>
+<div class="content">
 <center><img src="/_img/posts/server-stats/hist_time_overestimate_all_jobs_march19.png" width="450" height="400" ></center>
+</div>
 <br>
 
 Here, we can see a bimodal distribution. There is a peak around zero indicating that many jobs are great at estimating how much time they need, even when I removed jobs that are killed for running too long. The second peak at 23 hours (indicated by the dotted gray line) indicates that many jobs request about a day too much. For reference, the average actual runtime of a job was around 1.5 hours. This behavior is a consequence of the resource limits on shared resources in Hoffman2 (you can request a maximum of one day if you are using a node available to all users). As stated previously, time overestimation does not place a huge burden on the server, since jobs will exit whenever they actually complete. 

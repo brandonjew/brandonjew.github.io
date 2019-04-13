@@ -47,6 +47,9 @@ img {
   max-width: 100%;
   vertical-align: middle; }
 
+.content {
+  min-width: 450px;
+}
 /**
  * Figures
  */
