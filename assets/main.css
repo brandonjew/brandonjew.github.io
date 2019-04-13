@@ -49,6 +49,7 @@ img {
 
 .content {
   min-width: 450px;
+  height: auto;
 }
 /**
  * Figures
