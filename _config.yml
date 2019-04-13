@@ -16,8 +16,9 @@
 title: Brandon Jew 
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
+  Grad student in Bioinformatics at UCLA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://brandonjew.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: brandonjew
 twitter_username: brandojew
 show_excerpts: true
