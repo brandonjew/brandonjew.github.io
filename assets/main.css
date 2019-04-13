@@ -48,8 +48,10 @@ img {
   vertical-align: middle; }
 
 .content {
-  max-height: 400px;
-  min-width: 450px;
+  display: block;
+  max-width:450px;
+  max-height:400px;
+  width: auto;
   height: auto;
 }
 /**
