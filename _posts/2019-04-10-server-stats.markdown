@@ -63,8 +63,10 @@ The accounting data provides [quite a few metrics] for each job. We can see the 
 I calculated the memory overestimation of a job by subtracting the peak memory usage from the total memory requested (sometimes this is negative, indicating that a job went over the limit, but we only looked at positive values here). For this visualization, I also removed around 1,800 outlier jobs that had over 50 GB of unused memory (a few had 256 GB overestimated). 
 
 <br>
-<div class="content">
-<center><img src="/_img/posts/server-stats/hist_memory_overestimate_all_jobs_march19.png" width="450" height="400" ></center>
+<div class="parent">
+  <div class="container">
+  <center><img src="/_img/posts/server-stats/hist_memory_overestimate_all_jobs_march19.png" width="450" height="400" ></center>
+  </div>
 </div>
 <br>
 
@@ -73,8 +75,10 @@ Overall, we can observe a mean of roughly 5 GB overestimated per job and mode of
 Jobs vary significantly in how much memory they need. If a job requires 100GB of memory and 1GB is unused, it is much less of a problem than if a job only needing a few megabytes requests 1GB. With this is mind, I calculated the proportion of requested memory each job is actually using. I restricted the data to jobs that had zero-exit status and had memory usage less than or equal to the amount requested.  
 
 <br>
-<div class="content">
+<div class="parent">
+  <div class="container">
 <center><img src="/_img/posts/server-stats/hist_memory_proportion_all_jobs_march19.png" width="450" height="400" ></center>
+  </div>
 </div>
 <br>
 
@@ -90,8 +94,10 @@ Most jobs use *zero* percent of the memory they are requesting. On average (whic
 Similarly, I calculated time ovestimation as the difference between the requested and actual duration of each job. Again, I restricted the data to jobs that successfully ran (non-zero exit statuses) and I did not show about one percent of outlier jobs that have a difference over 100 hours.
 
 <br>
-<div class="content">
+<div class="parent">
+  <div class="container">
 <center><img src="/_img/posts/server-stats/hist_time_overestimate_all_jobs_march19.png" width="450" height="400" ></center>
+  </div>
 </div>
 <br>
 
