@@ -53,6 +53,12 @@ img {
   margin: auto;
 }
 
+.smallparent {
+  max-height: 200px;
+  width: auto;
+  margin: auto;
+}
+
 .container {
   display: block;
   width: 100%;
@@ -220,7 +226,7 @@ table {
 }
 
 .site-title {
-  font-size: 26px;
+  font-size: 30px;
   line-height: 54px;
   letter-spacing: -1px;
   margin-bottom: 0;
