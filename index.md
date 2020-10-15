@@ -1,8 +1,8 @@
 ---
 layout: home
+page.title: about me
 ---
 
-# about me
 
 I'm a grad student working with
 [Eran Halperin](https://www.eranhalperingenomics.com/){:target="_blank"} and
