@@ -33,7 +33,7 @@ Here's my heart rate leading up to and during my presentation brought to you by 
 
 As you can see, I took the stage at 11AM, coinciding with the 162 BPM peak.
 For reference, my heart rate tops out around 170 for my somewhat intensive bike rides. 
-As reflected in the data, I distinctly remember feeling more comfortable as I got my talk going.
+As reflected in the data, I distinctly remember feeling more comfortable as I got my talk going. The talk went great and I got a lot of interesting questions afterwards, which was definitely reassuring.
 
 Also, according to my watch, I burned 415 Calories giving this talk!
 
