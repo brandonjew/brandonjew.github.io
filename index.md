@@ -11,4 +11,4 @@ You can contact me at [firstname].[lastname]@ucla.edu.
 
 [google scholar](https://scholar.google.com/citations?user=yF4ue3kAAAAJ&hl=en) \| [github](https://github.com/brandonjew)
 
-<br>
+<br> 
